@@ -76,13 +76,12 @@ html, body{
 }
 
 .arrow{
-  background: url("../img/next.png");
+  background: url("../img/scrolldown.gif");
   background-size: cover;
   background-position: center;
-  width: 30px;
-  height: 30px;
-  transform: rotate(90deg);
-  margin-bottom: 30px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
 }
 
 nav{
@@ -317,6 +316,22 @@ nav{
   width: 100vw;
   height: 300px;
   background: url("../img/Nimbostratus-flacon.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-altostratus{
+  width: 100vw;
+  height: 300px;
+  background: url("../img/Altostratus-flacon.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-cumulonimbus{
+  width: 100vw;
+  height: 300px;
+  background: url("../img/Cumulonimbus-flacon.png");
   background-size: cover;
   background-position: center;
 }
