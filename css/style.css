@@ -113,7 +113,11 @@ nav{
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
 
+.bloc-produit a{
+  text-decoration:none;
+  color: black;
 }
 
 /* Image Produit */
@@ -306,6 +310,7 @@ nav{
   display:flex;
   flex-direction: column;
   padding: 10px;
+  padding-right: 30px;
   text-transform: uppercase;
 }
 
@@ -331,12 +336,14 @@ nav{
 
 .info-section{
   position: relative;
+  padding: 20px;
+  overflow: hidden;
 }
 
 .info-section p{
-  padding: 20px;
-  text-align: justify;
+  padding-bottom: 10px;
 }
+
 
 .cloud-deco{
   background: url("/img/nuage.png");
