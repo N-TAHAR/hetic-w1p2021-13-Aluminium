@@ -115,7 +115,7 @@ nav{
   text-align: center;
 }
 
-.bloc-produit a{
+.bloc-produit a, .articles a{
   text-decoration:none;
   color: black;
 }
@@ -278,7 +278,10 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
+
+/* title section */
 
 .product-section h1{
   text-align: center;
@@ -290,6 +293,8 @@ nav{
   align-items: center;
 }
 
+/* image */
+
 .img-nimbostratus{
   width: 100vw;
   height: 300px;
@@ -297,6 +302,8 @@ nav{
   background-size: cover;
   background-position: center;
 }
+
+/* info picto */
 
 .product-info{
   display: flex;
@@ -324,6 +331,8 @@ nav{
   padding: 10px;
 }
 
+/* Arrow */
+
 .product-arrow{
   background: url("/img/next.png");
   background-size: cover;
@@ -334,16 +343,21 @@ nav{
   margin-top: 10px;
 }
 
+/* info section */
+
 .info-section{
   position: relative;
   padding: 20px;
   overflow: hidden;
 }
 
+/* text info */
+
 .info-section p{
   padding-bottom: 10px;
 }
 
+/* cloud deco */
 
 .cloud-deco{
   background: url("/img/nuage.png");
@@ -370,3 +384,86 @@ nav{
   bottom:0px;
   right: -120px;
 }
+
+/* Page Articles */
+
+.article-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.article-section h1{
+  font-family: "Helvetica Neue Bold";
+  font-size: 30px;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+.article-section h1 span{
+  font-family: "Helvetica Neue Italic";
+  font-size: 25px;  
+}
+
+.img-page-article1{
+  background: url("/img/rain.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+}
+
+.img-page-article2{
+  background: url("/img/desert.png");
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+}
+
+.article-section h2{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.article-section h2 span{
+  color: #656363;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.article-section p{
+  font-size: 14px;
+  width: 280px;
+  font-weight: bold;
+  line-height: 17px;
+}
+
+.info-article1{
+  background: url("/img/goutte-pluie.png");
+  background-size: cover;
+}
+
+.info-article2{
+  position: relative;
+}
+
+.info-article1 p, .info-article2 p{
+  padding: 10px;
+}
+
+.sable{
+  background: url("/img/sable.png");
+  background-size: cover;
+  width: 100vw;
+  height: 30vh; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
