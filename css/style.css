@@ -1,49 +1,48 @@
 /* Font Helvetica  */
 
-@font-face{
+@font-face {
   font-family: "Helvetica Neue Light";
-  src: url("../font/HelveticaNeue-LightExt.woff") format('woff');
+  src: url("../font/HelveticaNeue-LightExt.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face{
+@font-face {
   font-family: "Helvetica Neue";
-  src: url("../font/HelveticaNeueMedium.woff") format('woff');
+  src: url("../font/HelveticaNeueMedium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-
-@font-face{
+@font-face {
   font-family: "Helvetica Neue Bold";
-  src: url("../font/HelveticaNeue-Black.woff") format('woff');
+  src: url("../font/HelveticaNeue-Black.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face{
+@font-face {
   font-family: "Helvetica Neue Italic";
-  src: url("../font/HelveticaNeue-ThinItalic.woff") format('woff');
+  src: url("../font/HelveticaNeue-ThinItalic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
   width: 100vw;
   height: 100vh;
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
-
 }
 
 /* Accueil */
 
-.home{
+.home {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,13 +50,13 @@ html, body{
   align-items: center;
   background: url("../img/duotone1.png");
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   margin-bottom: 50px;
 }
 
 /* Titre Accueil */
 
-.home h1{
+.home h1 {
   font-size: 55px;
   font-family: "Helvetica Neue Light";
   font-weight: lighter;
@@ -70,12 +69,12 @@ html, body{
   margin-top: 100px;
 }
 
-.home h1 span{
+.home h1 span {
   font-family: "Helvetica Neue Bold";
   font-size: 40px;
 }
 
-.arrow{
+.arrow {
   background: url("../img/scrolldown.gif");
   background-size: cover;
   background-position: center;
@@ -84,13 +83,14 @@ html, body{
   margin-bottom: 10px;
 }
 
-nav{
+nav {
   display: none;
 }
 
 /* Bloc Produit */
 
-.bloc-produit, .bloc-produit div{
+.bloc-produit,
+.bloc-produit div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -99,35 +99,36 @@ nav{
 
 /* Taille de chaque bloc produit */
 
-.bloc-produit > div{
+.bloc-produit > div {
   height: 110vh;
 }
 
-.bloc-produit h2{
+.bloc-produit h2 {
   font-size: 25px;
   font-weight: bold;
-
 }
 
-.bloc-produit div h3{
+.bloc-produit div h3 {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  margin-top: 30px;
 }
 
-.bloc-produit a, .articles a{
-  text-decoration:none;
+.bloc-produit a,
+.articles a {
+  text-decoration: none;
   color: black;
 }
 
 /* Image Produit */
 
-.img-produit{
+.img-produit {
   width: auto;
   height: 100%;
 }
 
-.img-container{
+.img-container {
   width: 100vw;
   height: 80vh;
   overflow-x: hidden;
@@ -135,19 +136,19 @@ nav{
 
 /* picto cloud */
 
-.cloud{
+.cloud {
   width: 50px;
   height: 50px;
   margin-top: 10px;
 }
 
-.grp-picto{
+.grp-picto {
   display: flex;
 }
 
 /* Text Produit */
 
-.bloc-produit div p{
+.bloc-produit div p {
   padding: 20px;
   text-align: justify;
   letter-spacing: 0.3px;
@@ -157,32 +158,31 @@ nav{
 
 /* section histoire */
 
-.histoire{
+.histoire {
   height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
 }
 
 /* Image de fond */
 
-.histoire{
+.histoire {
   background: url("../img/bg.jpg");
   background-size: cover;
-  
+  margin-top: 100px;
 }
 
 /* transparence de fond */
 
-.opacity{
+.opacity {
   padding: 30px;
 }
 
 /* titre histoire */
 
-.histoire h2{
+.histoire h2 {
   font-size: 30px;
   font-family: "Helvetica Neue Bold";
   margin-bottom: 50px;
@@ -192,20 +192,19 @@ nav{
 
 /* text histoire */
 
-.histoire p{
+.histoire p {
   font-family: "Helvetica Neue";
   text-align: center;
-
 }
 
-.histoire p::first-letter{
+.histoire p::first-letter {
   font-size: 20px;
   font-weight: 600;
 }
 
 /* Articles */
 
-.articles{
+.articles {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -214,28 +213,28 @@ nav{
 
 /* Title section article */
 
-.articles h2{
+.articles h2 {
   font-family: "Helvetica Neue Bold";
   font-size: 30px;
   margin-bottom: 30px;
   margin-top: 40px;
 }
 
-.articles h2 span{
+.articles h2 span {
   font-family: "Helvetica Neue Italic";
-  font-size: 25px;  
+  font-size: 25px;
 }
 
 /* Les 2 articles */
 
-.articles article{
+.articles article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 50vh;
 }
 
-.articles h3{
+.articles h3 {
   font-size: 15px;
   font-weight: bold;
   border-radius: 0 0 10px 10px;
@@ -247,25 +246,25 @@ nav{
   z-index: -1;
 }
 
-.articles h3 span{
+.articles h3 span {
   padding-top: 10px;
   color: #656363;
 }
 
-.article p{
+.article p {
   text-align: justify;
 }
 
 /* Article 1 */
 
-.article1{
+.article1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
 }
 
-.img-article1{
+.img-article1 {
   background: url("../img/rain.jpg");
   background-size: cover;
   width: 100vw;
@@ -274,13 +273,13 @@ nav{
 
 /* Article 2 */
 
-.article2{
+.article2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.img-article2{
+.img-article2 {
   background: url("../img/desert.png");
   background-size: cover;
   width: 100vw;
@@ -289,7 +288,7 @@ nav{
 
 /* Product Page 1 */
 
-.product-section{
+.product-section {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -300,7 +299,7 @@ nav{
 
 /* title section */
 
-.product-section h1{
+.product-section h1 {
   text-align: center;
   font-size: 30px;
   font-family: "Helvetica Neue Bold";
@@ -312,7 +311,7 @@ nav{
 
 /* image */
 
-.img-nimbostratus{
+.img-nimbostratus {
   width: 100vw;
   height: 300px;
   background: url("../img/Nimbostratus-flacon.png");
@@ -320,7 +319,7 @@ nav{
   background-position: center;
 }
 
-.img-altostratus{
+.img-altostratus {
   width: 100vw;
   height: 300px;
   background: url("../img/Altostratus-flacon.png");
@@ -328,7 +327,7 @@ nav{
   background-position: center;
 }
 
-.img-cumulonimbus{
+.img-cumulonimbus {
   width: 100vw;
   height: 300px;
   background: url("../img/Cumulonimbus-flacon.png");
@@ -338,27 +337,27 @@ nav{
 
 /* info picto */
 
-.product-info{
+.product-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
 
-.product-info h2{
+.product-info h2 {
   font-family: "Helvetica Neue Lighter", sans-serif;
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 10px;
   padding-right: 30px;
   text-transform: uppercase;
 }
 
-.product-info span{
+.product-info span {
   font-family: "Helvetica Neue Bold", sans-serif;
 }
 
-.product-section p{
+.product-section p {
   text-align: center;
   font-size: 14px;
   padding: 10px;
@@ -366,7 +365,7 @@ nav{
 
 /* Arrow */
 
-.product-arrow{
+.product-arrow {
   background: url("../img/next.png");
   background-size: cover;
   background-position: center;
@@ -378,7 +377,7 @@ nav{
 
 /* info section */
 
-.info-section{
+.info-section {
   position: relative;
   padding: 20px;
   overflow: hidden;
@@ -386,13 +385,13 @@ nav{
 
 /* text info */
 
-.info-section p{
+.info-section p {
   padding-bottom: 10px;
 }
 
 /* cloud deco */
 
-.cloud-deco{
+.cloud-deco {
   background: url("../img/nuage.png");
   background-size: cover;
   width: 100%;
@@ -400,103 +399,317 @@ nav{
   z-index: -1;
 }
 
-.cloud-position1{
+.cloud-position1 {
   position: absolute;
   top: -50px;
   left: -120px;
 }
 
-.cloud-position2{
+.cloud-position2 {
   position: absolute;
-  bottom:-80px;
+  bottom: -80px;
   left: -120px;
 }
 
-.cloud-position3{
+.cloud-position3 {
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
   right: -120px;
 }
 
 /* Page Articles */
 
-.article-section{
+.article-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-
 }
 
-.article-section h1{
+.article-section h1 {
   font-family: "Helvetica Neue Bold";
   font-size: 30px;
   padding: 10px;
   align-self: flex-start;
 }
 
-.article-section h1 span{
+.article-section h1 span {
   font-family: "Helvetica Neue Italic";
-  font-size: 25px;  
+  font-size: 25px;
 }
 
-.img-page-article1{
+.img-page-article1 {
   background: url("../img/rain.jpg");
   background-size: cover;
   width: 100vw;
   height: 300px;
 }
 
-.img-page-article2{
+.img-page-article2 {
   background: url("../img/desert.png");
   background-size: cover;
   width: 100vw;
   height: 300px;
 }
 
-.article-section h2{
+.article-section h2 {
   font-size: 18px;
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
-.article-section h2 span{
+.article-section h2 span {
   color: #656363;
   font-size: 15px;
   padding-top: 5px;
 }
 
-.article-section p{
+.article-section p {
   font-size: 14px;
   width: 280px;
   font-weight: bold;
   line-height: 17px;
 }
 
-.info-article1{
+.info-article1 {
   background: url("../img/goutte-pluie.png");
   background-size: cover;
 }
 
-.info-article2{
+.info-article2 {
   position: relative;
 }
 
-.info-article1 p, .info-article2 p{
+.info-article1 p,
+.info-article2 p {
   padding: 10px;
 }
 
-.sable{
+.sable {
   background: url("../img/sable.png");
   background-size: cover;
   width: 100vw;
-  height: 30vh; 
+  height: 30vh;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
 
+/* Media Queries */
 
+/* Ipad */
+
+@media (min-width: 768px) {
+  .home h1 {
+    font-size: 7em;
+    margin-top: 350px;
+  }
+
+  .home h1 span {
+    font-size: 0.6em;
+    margin-top: 40px;
+  }
+
+  .arrow {
+    width: 200px;
+    height: 100px;
+  }
+
+  .bloc-produit h2 {
+    font-size: 3em;
+  }
+
+  .bloc-produit div h3 {
+    font-size: 2.3em;
+  }
+
+  .cloud {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bloc-produit div p {
+    font-size: 1.8em;
+  }
+
+  .histoire h2{
+    font-size: 4em;
+  }
+
+  .histoire p{
+    font-size: 2em;
+    padding: 10px;
+    line-height: 40px;
+  }
+
+  .histoire p::first-letter{
+    font-size: 1.4em;
+  }
+
+  .articles h2{
+    font-size: 3em;
+  }
+
+  .articles h2 span{
+    font-size: 1em;
+  }
+
+  .articles h3{
+    font-size: 1.8em;
+  }
+
+  .product-section{
+    height: 100vh;
+    justify-content: space-around;
+  }
+
+  .product-section h1{
+    font-size: 3em;
+  }
+
+  .img-cumulonimbus, .img-altostratus, .img-nimbostratus{
+    height: 500px;
+  }
+
+  .product-info{
+    font-size: 2em;
+  }
+
+  .grp-picto{
+    width: 300px;
+    height: 90px;
+    margin-left: 50px;
+  }
+
+  .product-section p{
+    font-size: 1.4em;
+  }
+
+  .info-section{
+    height: 40vh;
+  }
+
+  .info-section p{
+    font-size: 1.4em;
+    padding: 10px;
+  }
+
+  .cloud-deco{
+    height: 500px;
+  }
+
+  .article-section h1{
+    font-size: 3em;
+    margin-top: 40px;
+  }
+
+  .article-section h1 span{
+    font-size: 1em;
+  }
+
+  .img-page-article1, .img-page-article2{
+    height: 500px;
+  }
+
+  .article-section h2{
+    font-size: 30px;
+  }
+
+  .article-section h2 span{
+    font-size: 20px;
+  }
+
+  .article-section p{
+    font-size: 20px;
+    width: 80vw;
+    text-align: justify;
+    line-height: 30px;
+  }
+  .product-arrow{
+    margin-bottom: 20px;
+  }
+
+  .info-article1, .info-article2{
+    height: 70vw;
+  }
+
+  .info-article1 p, .info-article2 p{
+    font-size: 22px;
+    padding: 25px;
+  }
+}
+
+/* Ipad Pro */
+
+@media (min-width: 1024px){
+  
+  .articles article h3{
+    font-size: 35px;
+    padding-top: 30px;
+  }
+
+  .img-cumulonimbus, .img-altostratus, .img-nimbostratus{
+    height: 700px;
+  }
+
+  .product-section p{
+    font-size: 30px;
+  }
+
+  .info-section{
+    height: 40vh;
+  }
+
+  .info-section p{
+    font-size: 1.7em;
+    padding: 20px;
+  }
+
+  .cloud-deco{
+    height: 800px;
+  }
+
+
+  .article-section h1{
+    font-size: 4em;
+    margin-top: 40px;
+  }
+
+  .article-section h1 span{
+    font-size: 1em;
+  }
+
+  .img-page-article1, .img-page-article2{
+    height: 600px;
+  }
+
+  .article-section h2{
+    font-size: 40px;
+  }
+
+  .article-section h2 span{
+    font-size: 30px;
+  }
+
+  .article-section p{
+    font-size: 30px;
+    width: 80vw;
+    text-align: justify;
+    line-height: 35px;
+  }
+  .product-arrow{
+    margin-bottom: 40px;
+  }
+
+  .info-article1, .info-article2{
+    height: 60vw;
+  }
+
+  .info-article1 p, .info-article2 p{
+    font-size: 27px;
+    padding: 25px;
+  }
+}
