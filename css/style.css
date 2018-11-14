@@ -26,7 +26,7 @@
   font-family: "Helvetica Neue Italic";
   src: url("/font/HelveticaNeue-ThinItalic.woff") format('woff');
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
 
 *{
@@ -75,7 +75,7 @@ html, body{
   font-size: 40px;
 }
 
-.fleche{
+.arrow{
   background: url("/img/next.png");
   background-size: cover;
   background-position: center;
@@ -264,4 +264,102 @@ nav{
   background-size: cover;
   width: 303px;
   height: 228px;
+}
+
+/* Product Page 1 */
+
+.product-section{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-section h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Helvetica Neue Bold";
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-nimbostratus{
+  width: 100vw;
+  height: 300px;
+  background: url("/img/Nimbostratus-flacon.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.product-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-info h2{
+  font-family: "Helvetica Neue Lighter", sans-serif;
+  display:flex;
+  flex-direction: column;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.product-info span{
+  font-family: "Helvetica Neue Bold", sans-serif;
+}
+
+.product-section p{
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.product-arrow{
+  background: url("/img/next.png");
+  background-size: cover;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  transform: rotate(90deg);
+  margin-top: 10px;
+}
+
+.info-section{
+  position: relative;
+}
+
+.info-section p{
+  padding: 20px;
+  text-align: justify;
+}
+
+.cloud-deco{
+  background: url("/img/nuage.png");
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+
+.cloud-position1{
+  position: absolute;
+  top: -50px;
+  left: -120px;
+}
+
+.cloud-position2{
+  position: absolute;
+  bottom:-80px;
+  left: -120px;
+}
+
+.cloud-position3{
+  position: absolute;
+  bottom:0px;
+  right: -120px;
 }
