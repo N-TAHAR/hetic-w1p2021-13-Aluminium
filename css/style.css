@@ -503,7 +503,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 
 .product-info h2 {
@@ -635,10 +634,6 @@ nav {
   line-height: 17px;
 }
 
-.article1-info {
-  background: url("../img/goutte-pluie.png");
-  background-size: cover;
-}
 
 .article2-info {
   position: relative;
@@ -649,16 +644,7 @@ nav {
   padding: 10px;
 }
 
-.sable {
-  background: url("../img/sable.png");
-  background-size: cover;
-  width: 100vw;
-  height: 30vh;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
+
 
 /* Media Queries */
 
@@ -700,10 +686,6 @@ nav {
     font-size: 35px;
   }
 
-  .history p::first-letter {
-    font-size: 30px;
-    font-weight: 600;
-  }
   /* Product Page */
 
   .product-info h2 {
@@ -1161,9 +1143,17 @@ a {
 
 @media (min-width: 1366px){
   .img-altostratus{
-    height: 800px;
-    width: 600px;
+    height: 100vh;
+    width: 100%;
     margin-top: 30px;
+  }
+
+  .product-section{
+    width: 160%;
+  }
+
+  .product-arrow{
+    display: none;
   }
 
   .product-section p{
@@ -1171,7 +1161,7 @@ a {
   }
 
   .product-info{
-    margin-top: 10px;
+    margin-top: 100px;
     width: 652px;
   }
 
@@ -1186,19 +1176,118 @@ a {
   }
 
   .product-title{
-    margin: 100px 0 0 0 ;
+    margin: 100px 0 0 0;
   }
 
   .history{
     height: 130vh;
+    align-items: center;
   }
 
   .history p{
     font-size: 20px;
     padding: 30px;
+    width: 50vw;
   }
 
   .isTriggered{
     padding: 0;
   }
+
+  .img-cumulonimbus{
+    height: 100vh;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .img-nimbostratus{
+    height: 100vh;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .info-section {
+    height: 50vh;
+  }
+
+  .article-section h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: "Helvetica Neue Light";
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .article-section h2 span{
+    font-size: 30px;
+    color: white;
+  }
+
+  .article-section p{
+    font-size: 20px;
+  }
+
+
+  .info-section p{
+    font-size: 20px;
+  }
+
+  .img-page-article1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .article1-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article1-info h2{
+    font-size: 40px;
+    font-family: "Helvetica Neue Light";
+    margin-right: 480px;
+    margin-bottom: 50px;
+  }
+
+  .article1-info h2 span{
+    font-family: "Helvetica Neue";    
+  }
+
+
+  .article1-info p{
+    width: 50vw;
+  }
+
+  .all{
+    display: flex;  
+    justify-content: center;
+  }
+
+
+  .info-section{
+    height: 100vh;
+  }
+
+  .info-section p{
+    width: 60%;
+    font-size: 16px;
+    text-align: justify;
+    font-family: "Helvetica Neue Light";
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+  }
+
+  .product-info{
+    width: 60%;
+  }
+
+}
+
+.product-menu{
+  color: white;
 }
