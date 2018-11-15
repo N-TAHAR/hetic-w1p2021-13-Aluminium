@@ -761,9 +761,6 @@ nav {
     line-height: 40px;
   }
 
-  .history p::first-letter {
-    font-size: 1.4em;
-  }
 
   .articles h2 {
     font-size: 3em;
@@ -1289,5 +1286,5 @@ a {
 }
 
 .product-menu{
-  color: white;
+  color: black;
 }
