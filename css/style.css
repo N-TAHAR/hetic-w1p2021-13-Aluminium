@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Helvetica Neue Light";
-  src: url("../font/HelveticaNeue-LightExt.woff") format("woff");
+  src: url("../font/HelveticaNeue-UltraLigExt.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -87,10 +87,22 @@ nav {
   display: none;
 }
 
+/* Best Product */
+
+.best-product{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.best-img{
+  widt
+}
+
 /* Bloc Produit */
 
-.bloc-produit,
-.bloc-produit div {
+.product-block,
+.product-block div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -99,23 +111,23 @@ nav {
 
 /* Taille de chaque bloc produit */
 
-.bloc-produit > div {
+.product-block > div {
   height: 110vh;
 }
 
-.bloc-produit h2 {
+.product-block h2 {
   font-size: 25px;
   font-weight: bold;
 }
 
-.bloc-produit div h3 {
+.product-block div h3 {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
 }
 
-.bloc-produit a,
+.product-block a,
 .articles a {
   text-decoration: none;
   color: black;
@@ -123,7 +135,7 @@ nav {
 
 /* Image Produit */
 
-.img-produit {
+.product-img {
   width: auto;
   height: 100%;
 }
@@ -148,7 +160,7 @@ nav {
 
 /* Text Produit */
 
-.bloc-produit div p {
+.product-block div p {
   padding: 20px;
   text-align: justify;
   letter-spacing: 0.3px;
@@ -158,7 +170,7 @@ nav {
 
 /* section histoire */
 
-.histoire {
+.history {
   height: 120vh;
   display: flex;
   flex-direction: column;
@@ -168,21 +180,19 @@ nav {
 
 /* Image de fond */
 
-.histoire {
+.history {
   background: url("../img/bg.jpg");
   background-size: cover;
   margin-top: 100px;
+  padding: 50px;
 }
 
 /* transparence de fond */
 
-.opacity {
-  padding: 30px;
-}
 
 /* titre histoire */
 
-.histoire h2 {
+.history h2 {
   font-size: 30px;
   font-family: "Helvetica Neue Bold";
   margin-bottom: 50px;
@@ -192,14 +202,13 @@ nav {
 
 /* text histoire */
 
-.histoire p {
-  font-family: "Helvetica Neue";
-  text-align: center;
-}
-
-.histoire p::first-letter {
-  font-size: 20px;
-  font-weight: 600;
+.history p {
+  font-family: "Helvetica Neue Light";
+  font-weight: bold;
+  text-align: justify;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 /* Articles */
@@ -230,25 +239,22 @@ nav {
 .articles article {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   height: 50vh;
 }
 
 .articles h3 {
-  font-size: 15px;
+  font-family: "Helvetica Neue Light";
+  font-size: 16px;
   font-weight: bold;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0 5px 30px grey;
+  letter-spacing: 1px;
+  line-height: 25px;
   height: 12vh;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  z-index: -1;
-}
-
-.articles h3 span {
-  padding-top: 10px;
-  color: #656363;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .article p {
@@ -261,14 +267,20 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
 }
 
 .img-article1 {
-  background: url("../img/rain.jpg");
+  background: url("../img/article1.jpeg");
   background-size: cover;
   width: 100vw;
-  height: 35vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-article1 h3{
+
 }
 
 /* Article 2 */
@@ -280,10 +292,17 @@ nav {
 }
 
 .img-article2 {
-  background: url("../img/desert.png");
+  background: url("../img/article2.jpeg");
   background-size: cover;
   width: 100vw;
-  height: 35vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-article2 h3{
+  text-transform: uppercase;
 }
 
 /* Product Page 1 */
@@ -293,6 +312,7 @@ nav {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   overflow-x: hidden;
 }
@@ -440,14 +460,14 @@ nav {
 }
 
 .img-page-article1 {
-  background: url("../img/rain.jpg");
+  background: url("../img/article1.jpeg");
   background-size: cover;
   width: 100vw;
   height: 300px;
 }
 
 .img-page-article2 {
-  background: url("../img/desert.png");
+  background: url("../img/article2.jpeg");
   background-size: cover;
   width: 100vw;
   height: 300px;
@@ -473,17 +493,17 @@ nav {
   line-height: 17px;
 }
 
-.info-article1 {
+.article1-info {
   background: url("../img/goutte-pluie.png");
   background-size: cover;
 }
 
-.info-article2 {
+.article2-info {
   position: relative;
 }
 
-.info-article1 p,
-.info-article2 p {
+.article1-info p,
+.article2-info p {
   padding: 10px;
 }
 
@@ -500,6 +520,81 @@ nav {
 
 /* Media Queries */
 
+/* Iphone 6,7,8 et X */
+
+@media (min-width: 375px) {
+
+  /* Product Page */
+  
+   .product-info h2{
+     font-size: 20px;
+   }
+  
+   .product-section p{
+     font-size: 17px;
+     padding: 30px;
+   }
+  
+  /* Article Page */
+  
+  .img-page-article1 {
+   height: 350px;
+  }
+  
+  .article-section h2{
+   font-size: 18px;
+  }
+  
+  .img-page-article2 {
+   height: 350px;
+  }
+  }
+  
+
+/* Iphone plus */
+
+  @media (min-width: 414px) {
+  
+   /* HomePage */
+  
+   .history h2{
+     font-size: 35px;
+   }
+  
+   .history p::first-letter{
+     font-size: 30px;
+     font-weight: 600;
+   }
+    /* Product Page */
+  
+   .product-info h2{
+     font-size: 25px;
+   }
+  
+   .product-section p{
+     font-size: 20px;
+     padding: 30px;
+   }
+  
+   /* Article Page */
+  
+  .img-page-article1 {
+     height: 350px;
+   }
+  
+  .article-section p{
+     font-size: 16px;
+   }
+  
+  .article-section h2{
+     font-size: 20px;
+   }
+  
+   .img-page-article2 {
+     height: 350px;
+   }
+   }
+  
 /* Ipad */
 
 @media (min-width: 768px) {
@@ -518,11 +613,11 @@ nav {
     height: 100px;
   }
 
-  .bloc-produit h2 {
+  .product-block h2 {
     font-size: 3em;
   }
 
-  .bloc-produit div h3 {
+  .product-block div h3 {
     font-size: 2.3em;
   }
 
@@ -531,21 +626,21 @@ nav {
     height: 100px;
   }
 
-  .bloc-produit div p {
+  .product-block div p {
     font-size: 1.8em;
   }
 
-  .histoire h2{
+  .history h2{
     font-size: 4em;
   }
 
-  .histoire p{
+  .history p{
     font-size: 2em;
     padding: 10px;
     line-height: 40px;
   }
 
-  .histoire p::first-letter{
+  .history p::first-letter{
     font-size: 1.4em;
   }
 
@@ -559,11 +654,6 @@ nav {
 
   .articles h3{
     font-size: 1.8em;
-  }
-
-  .product-section{
-    height: 100vh;
-    justify-content: space-around;
   }
 
   .product-section h1{
@@ -632,11 +722,11 @@ nav {
     margin-bottom: 20px;
   }
 
-  .info-article1, .info-article2{
+  .article1-info, .article2-info{
     height: 70vw;
   }
 
-  .info-article1 p, .info-article2 p{
+  .article1-info p, .article2-info p{
     font-size: 22px;
     padding: 25px;
   }
@@ -704,12 +794,18 @@ nav {
     margin-bottom: 40px;
   }
 
-  .info-article1, .info-article2{
+  .article1-info, .article2-info{
     height: 60vw;
   }
 
-  .info-article1 p, .info-article2 p{
+  .article1-info p, .article2-info p{
     font-size: 27px;
     padding: 25px;
   }
+}
+
+/* Desktop */
+
+@media (min-width: 1366px){
+
 }
