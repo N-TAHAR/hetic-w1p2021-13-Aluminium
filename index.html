@@ -14,99 +14,120 @@
         <h1>Hydro<span>meteore</span></h1>
         <div class="arrow"></div>
       </div>
-      <nav>
-        <ul>
-          <li>Acceuil</li>
-          <li>Cumuloninbus</li>
-          <li>Altostratus</li>
-          <li>Nimbostratus</li>
+      <nav class="menu" id="menu">
+        <div id="open-menu" class="open-menu">
+          <div class="menu-icon" id="menu-icon-first"></div>
+          <div class="menu-icon" id="menu-icon-last"></div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="index.html">Accueil</a></li>
+          <li class="nav-list-item" id="drop-down">
+              <p>Produits</p>
+            <ul class="drop-down-menu" id="drop-down-menu">
+              <li class="drop-down-item"><a href="cumulonimbus.html">Cumulonimbus</a></li>
+              <li class="drop-down-item"><a href="altostratus.html">Altostratus</a></li>
+              <li class="drop-down-item"><a href="nimbostrastus.html">Nimbostrastus</a></li>
+            </ul>
+          </li>
+          <li class="nav-list-item"><a href="">Articles</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="best-product">
       <div class="best-img">
-        <img src="../im" alt="best product">
+        <img src="img/bottlecrush.png" alt="best product" class="bottlecrush" />
       </div>
       <div class="crush-info">
-        <h3 class="crush">Coup <span class="word1">de</span> <span class="word2">coeur</span></h3>
+        <h3 class="crush">
+          Coup<span class="word1">de</span><br />
+          <span class="word2">coeur</span>
+        </h3>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, necessitatibus, cumque totam aliquid nemo, quas laudantium neque sit optio vero accusamus? Inventore vel animi eos delectus nesciunt adipisci est mollitia.</p>
-
+        <p>
+          Cumulonimbus est le plus puissant des nuages.<br />
+          Il est l’associé de phénomènes météorologiques violents tels que de
+          fortes averses et la foudre.<br />
+          Ce nuage a un usage particulièrement salutaire dans les zones les plus
+          arides.
+        </p>
       </div>
     </section>
 
-    <section class="product-block">
-      <h2>Nos Produits</h2>
-      <div class="product1">
-          <a href="cumulonimbus.html">
+    <h2 class="product-title">Nos Produits</h2>
+    <section class="bloc-produit" id="bloc-produit">
+      <div class="product produit1">
+        <a href="../cumulonimbus.html">
           <div class="img-container">
-       
-          <img src="img/jar3.png" alt="" class="product-img" />
+            <img src="img/jar3.png" alt="" id="first" class="img-produit" />
           </div>
+          <h3>Cumuloninbus</h3>
         </a>
         <img src="img/storm.png" alt="storm cloud" class="cloud" />
-        <h3>Cumuloninbus</h3>
         <p>Le nuage le plus puissant !</p>
       </div>
-
-      <div class="product2">
-        <a href="altostratus.html">
+      <div class="product produit2">
+        <a href="../altostratus.html">
           <div class="img-container">
-            <img src="img/jar.png" alt="image Alto" class="product-img"/>
+            <img
+              src="img/jar.png"
+              alt="image Alto"
+              id="second"
+              class="img-produit"
+            />
           </div>
+
+          <h3>Altostratus</h3>
         </a>
         <img src="img/cloud.png" alt="cloud" class="cloud" />
-        <h3>Altostratus</h3>
         <p>Le nuage qui gêne le soleil</p>
       </div>
-
-      <div class="product3">
-        <a href="nimbostrastus.html">
+      <div class="product produit3">
+        <a href="../nimbostrastus.html">
           <div class="img-container">
-            <img src="img/jar2.png" alt="" class="product-img" />
+            <img src="img/jar2.png" alt="image jar" id="third" class="img-produit">
           </div>
-          
+          <h3>Nimbostratus</h3>
         </a>
-        <img src="img/rain2.png" alt="rain cloud" class="cloud" />
-        <h3>Nimbostratus</h3>
+        <img src="img/cloud.png" alt="rain cloud" class="cloud" />
         <p>La pluie idéal pour les fermiers</p>
       </div>
     </section>
 
     <section class="article-block">
       <div class="history">
-          <h2>Un monde <br />nouveau</h2>
+        <h2>Un monde <br />nouveau</h2>
 
-          <p>
-            Chez Hydrométéore, nous plaçons la protection des interactions des
-            êtres vivants avec leur environnement, au sommet de nos priorités.
-          </p>
-          <br />
+        <p>
+          Chez Hydrométéore, nous plaçons la protection des interactions des
+          êtres vivants avec leur environnement, au sommet de nos priorités.
+        </p>
+        <br />
 
-          <p>
-            Partis d’une idée simplistes, nos équipes de chercheurs,
-            scientifiques, collaborateurs, artisans et ingénieurs ont oeuvrés en
-            harmonie durant 5 ans pour mener à bien un projet qui semblait fou.
-          </p>
-          <br />
+        <p>
+          Partis d’une idée simplistes, nos équipes de chercheurs,
+          scientifiques, collaborateurs, artisans et ingénieurs ont oeuvrés en
+          harmonie durant 5 ans pour mener à bien un projet qui semblait fou.
+        </p>
+        <br />
 
-          <p>
-            Nous vous présentons pour la première fois ce que nous pensons être
-            la révolution écologique du siècle.
-          </p>
+        <p>
+          Nous vous présentons pour la première fois ce que nous pensons être la
+          révolution écologique du siècle.
+        </p>
       </div>
 
       <div class="articles">
         <h2>HYDRO <span>news.</span></h2>
 
         <article class="article1">
-          
-            <div class="img-article1">
-                <a href="article1.html">
-                  <h3>"LES PLUIES ARTIFICIELLES :<br>le nouvel enjeu des sociétés"</h3>
-                </a>
-            </div>
+          <div class="img-article1">
+            <a href="article1.html">
+              <h3>
+                "LES PLUIES ARTIFICIELLES :<br />le nouvel enjeu des sociétés"
+              </h3>
+            </a>
+          </div>
         </article>
 
         <article class="article2">
@@ -118,5 +139,6 @@
         </article>
       </div>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
