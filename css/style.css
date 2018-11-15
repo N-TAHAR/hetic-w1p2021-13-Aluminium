@@ -422,7 +422,8 @@ nav {
   align-items: center;
 }
 
-.img-article1 h3 {
+.img-article1 h3 span{
+  font-size: 15px;
 }
 
 /* Article 2 */
