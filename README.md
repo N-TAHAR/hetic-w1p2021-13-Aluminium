@@ -2,4 +2,4 @@
 
 Lien du site: https://hydrometeore.netlify.com
 
-En mode client/prestataire
+1ère semaine intensive dans laquelle nous devions concevoir et développer un site web en mode client/prestataire.
